@@ -27,10 +27,14 @@ Got something that belongs here? Submit a PR!
 
 ### Information and Articles
  - [Official homepage](https://github.com/appcelerator/hyperloop-examples)
- - [Medium.com](https://medium.com/all-titanium/titanium-an-introduction-to-hyperloop-by-hans-knoechel-47d4326ca52e) - Blog post by Rene Pot - Featuring Hans Knoechel
->At the TitaniumNL meetup in Amsterdam at February 3rd, Hans Knoechel talked about Hyperloop and what Hyperloop actually is.
+ - [Medium.com](https://medium.com/all-titanium/titanium-an-introduction-to-hyperloop-by-hans-knoechel-47d4326ca52e) - Blog post by Rene Pot - Featuring Hans Knoechel.   At the TitaniumNL meetup in Amsterdam at February 3rd, Hans Knoechel talked about Hyperloop and what Hyperloop actually is.
 In short, Hyperloop allows you to talk from Javascript straight to Objective-C/Swift or Java without having to write wrapper modules. This makes it really really easy to extend native API’s for Titanium.
 The presentation has been recorded and can be seen in full on YouTube.
+- [Developing Native APIs with Hyperloop](http://www.appcelerator.com/blog/2017/10/developing-native-apis-with-hyperloop-a-beginners-guide/) -  
+By Erin Bailey
+October 25, 2017: 
+Intreview with Nazir Dogan, Mobile Application Developer and Software Developer at Etiya, has been using Hyperloop since its early days to create six unique open-sourced modules.
+
 
 ### Guides
 [Enabling Hyperloop](https://wiki.appcelerator.org/display/guides2/Enabling+Hyperloop)
@@ -53,6 +57,12 @@ The presentation has been recorded and can be seen in full on YouTube.
 [Windows Hyperloop Programming Guide](https://wiki.appcelerator.org/display/guides2/Windows+Hyperloop+Programming+Guide) has information on running a demo application specifically for Windows and you can learn how to use Hyperloop in your own project.
 
 ### Modules
+- [Ti.MTTCircularSlider](https://github.com/nazrdogan/Ti.MTTCircularSlider) - Hyperloop module for https://github.com/MTT-IOS/MTTCircularSlider
+- [Ti.FSCalendar](https://github.com/nazrdogan/Ti.FSCalendar) - Hyperloop module for https://github.com/WenchaoD/FSCalendar
+- [Ti.DrawView](https://github.com/nazrdogan/Ti.DrawView) - Draw on your screen on iOS
+- [Ti.IRLDocumentScanner](https://github.com/nazrdogan/Ti.IRLDocumentScanner) - Hyperloop module for https://github.com/charlymr/IRLDocumentScanner
+- [Ti.HCSStarRatingView](https://github.com/nazrdogan/Ti.HCSStarRatingView) - Hyperloop module for https://github.com/hsousa/HCSStarRatingView
+
 - [Ti.Firebase](https://github.com/loop-modules/Ti.Firebase) - Ti.Firebase is an iOS Hyperloop wrapper of the Firebase SDK.
 
 - [Ti.UICollectionView](https://github.com/loop-modules/Ti.UICollectionView) - Ti.UICollectionView is an iOS Hyperloop wrapper of the native UICollectionView component.
