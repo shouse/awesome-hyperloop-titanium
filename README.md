@@ -26,6 +26,8 @@ This repo is an attempt to bridge that gap and link the community to relevant in
 
 ### Information and Articles
  - [Official homepage](https://github.com/appcelerator/hyperloop-examples)
+ - [Axway Docs](https://docs.axway.com/bundle/Titanium_SDK_allOS_en/page/hyperloop.html) - Some of the best documentation currently
+ - [Hyperloop FAQ](https://docs.axway.com/bundle/Titanium_SDK_allOS_en/page/hyperloop_faq.html)
  - [Medium.com](https://medium.com/all-titanium/titanium-an-introduction-to-hyperloop-by-hans-knoechel-47d4326ca52e) - Blog post by Rene Pot - Featuring Hans Knoechel.   At the TitaniumNL meetup in Amsterdam at February 3rd, Hans Knoechel talked about Hyperloop and what Hyperloop actually is.
 In short, Hyperloop allows you to talk from Javascript straight to Objective-C/Swift or Java without having to write wrapper modules. This makes it really really easy to extend native API’s for Titanium.
 The presentation has been recorded and can be seen in full on YouTube.
