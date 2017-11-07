@@ -19,12 +19,10 @@ This repo is an attempt to bridge that gap and link the community to relevant in
 - Want information about something but don't have a link?  [Create an issue!](https://github.com/shouse/awesome-hyperloop-titanium/issues)
 
 ## Table of Contents (Suggest one)
- - General Information
- - Guides 
- - Modules 
- - Examples 
- - People to follow
-
+ - [Information and Articles] (https://github.com/shouse/awesome-hyperloop-titanium/blob/master/README.md#information-and-articles)
+ - [Guides](https://github.com/shouse/awesome-hyperloop-titanium#guides)
+ - [Modules](https://github.com/shouse/awesome-hyperloop-titanium#moduoles)
+ - [Examples](https://github.com/shouse/awesome-hyperloop-titanium#examples) 
 
 ### Information and Articles
  - [Official homepage](https://github.com/appcelerator/hyperloop-examples)
