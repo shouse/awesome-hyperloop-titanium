@@ -105,5 +105,7 @@ Intreview with Nazir Dogan, Mobile Application Developer and Software Developer 
  - [Official Github example](https://github.com/appcelerator/hyperloop-examples) - Hyperloop Examples
 >The following application demonstrates direct native API access using Appcelerator Hyperloop.
  - [Imaging Workshops ToDo](https://github.com/appcdev/imagine-workshops-todo/tree/hyperloop?files=1) - Todo Demo App
+- [titanium-auth-session.js](https://gist.github.com/hansemannn/71b6181557ec0f6024e29c642dbe52e3) - Use Axway Hyperloop to perform OAuth-sessions with the iOS 11+ API "SFAuthenticationSession"
+
 
 
