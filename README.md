@@ -15,7 +15,8 @@ This repo is an attempt to bridge that gap and link the community to relevant in
 
 **Cool!  What can I do?**
 
-Got something that belongs here? Submit a PR!
+- Got something that belongs here? [Fork](https://github.com/shouse/awesome-hyperloop-titanium/edit/master/README.md#fork-destination-box) and Submit a PR!
+- Want information about something but don't have a link?  [Create an issue!](https://github.com/shouse/awesome-hyperloop-titanium/issues)
 
 ## Table of Contents (Suggest one)
  - General Information
