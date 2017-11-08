@@ -17,6 +17,7 @@ This repo is an attempt to bridge that gap and link the community to relevant in
 
 - Got something that belongs here? [Fork](https://github.com/shouse/awesome-hyperloop-titanium/edit/master/README.md#fork-destination-box) and Submit a PR!
 - Want information about something but don't have a link?  [Create an issue!](https://github.com/shouse/awesome-hyperloop-titanium/issues)
+[![GitHub issue state](https://img.shields.io/github/issues/detail/s/badges/shields/979.svg)](https://github.com/shouse/awesome-hyperloop-titanium/)
 
 ## Table of Contents (Suggest one)
  - [Information and Articles](https://github.com/shouse/awesome-hyperloop-titanium/blob/master/README.md#information-and-articles)
