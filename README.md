@@ -9,9 +9,9 @@ Anything you can write in Objective-C, Swift, Java, or C# can be represented wit
 
 **What is this repo for?**
 
-There's so much awesomeness about Hyperloop, but it's difficult to find an aggregated spot of up-to-date information about it.
+There's so much **awesomeness about Hyperloop**, but it's **difficult to find** an aggregated spot of up-to-date **information about it**.
 
-This repo is an attempt to bridge that gap and link the community to relevant information so that we can make more badass software!
+This repo is an attempt to bridge that gap and link the community to relevant information so that we can **make more badass software**!
 
 **Cool!  What can I do?**
 
@@ -37,7 +37,7 @@ By Erin Bailey
 October 25, 2017: 
 Intreview with Nazir Dogan, Mobile Application Developer and Software Developer at Etiya, has been using Hyperloop since its early days to create six unique open-sourced modules.
 
-*JIRA*
+**JIRA**
 
 - [AppC Hyperloop Jira - Component:Hyperloop](https://jira.appcelerator.org/browse/TIMOB-25481?jql=project%20%3D%20TIMOB%20AND%20component%20%3D%20Hyperloop)
 - [AppC Hyperloop Jira - Label:Hyperloop](https://jira.appcelerator.org/browse/TISTUD-8658?jql=labels%20%3D%20hyperloop)
@@ -51,7 +51,7 @@ Intreview with Nazir Dogan, Mobile Application Developer and Software Developer 
 
 [AppC Blog - Tech Tutorial: Hyperloop Modules](http://www.appcelerator.com/blog/2017/07/tech-tutorial-hyperloop-modules/)
 
-> In this in-depth video, Developer Evangelist Jason Kneen provides an overview of Titanium, its benefits and how it works. The tutorial delves into best practices for UI and views, navigation, buttons and labels, event handling, and data binding. Jason also demonstrates how these concepts are used in practice with a sample project code walkthrough.
+> In this in-depth video, Developer Evangelist **Jason Kneen** provides an overview of Titanium, its benefits and how it works. The tutorial delves into best practices for UI and views, navigation, buttons and labels, event handling, and data binding. Jason also demonstrates how these concepts are used in practice with a sample project code walkthrough.
 
 **Android**
 
