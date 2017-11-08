@@ -23,7 +23,7 @@ This repo is an attempt to bridge that gap and link the community to relevant in
  - [Guides](https://github.com/shouse/awesome-hyperloop-titanium#guides)
  - [Modules](https://github.com/shouse/awesome-hyperloop-titanium#moduoles)
  - [Examples](https://github.com/shouse/awesome-hyperloop-titanium#examples)
- - [I NEED HELP WITH HYPERLOOP!!!](http://tislack.org/) - We gotcha covered!  Join our awesome Slack team and get help with hyperloop in the #hyperloop, #help-me, or #jobs channels!  If it can be done somewhere there can help it happen.
+ - [I NEED HELP HYPERLOOP!!!](http://tislack.org/) - We gotcha covered!  Join our awesome Slack team and get help with hyperloop in the #hyperloop, #help-me, or #jobs channels!  If it can be done somewhere there can help it happen.
 
 ### Information and Articles
  - [Official homepage](https://github.com/appcelerator/hyperloop-examples)
@@ -37,7 +37,14 @@ By Erin Bailey
 October 25, 2017: 
 Intreview with Nazir Dogan, Mobile Application Developer and Software Developer at Etiya, has been using Hyperloop since its early days to create six unique open-sourced modules.
 
-- [AppC Hyperloop Jira](https://jira.appcelerator.org/browse/TIMOB-25481?jql=project%20%3D%20TIMOB%20AND%20component%20%3D%20Hyperloop)
+*JIRA*
+
+- [AppC Hyperloop Jira - Component:Hyperloop](https://jira.appcelerator.org/browse/TIMOB-25481?jql=project%20%3D%20TIMOB%20AND%20component%20%3D%20Hyperloop)
+- [AppC Hyperloop Jira - Label:Hyperloop](https://jira.appcelerator.org/browse/TISTUD-8658?jql=labels%20%3D%20hyperloop)
+
+- [AppC Hyperloop Jira - Open Tickets](https://jira.appcelerator.org/browse/TIMOB-25478?jql=status%20%3D%20Open%20AND%20labels%20%3D%20hyperloop) - See what issues are open
+
+[AppC Hyperloop Jira - Update Recently](https://jira.appcelerator.org/browse/TIMOB-25478?filter=-8&jql=labels%20%3D%20hyperloop)
 ### Guides
 [Enabling Hyperloop](https://wiki.appcelerator.org/display/guides2/Enabling+Hyperloop)
 > Each Titanium project that want to use Hyperloop requires the Hyperloop-services to be enabled. By default, Hyperloop is disabled and you can enable it for your projects via the CLI or within Studio.
