@@ -1,4 +1,4 @@
-# Awesome Hyperloop: Titanium
+# Awesome: Titanium Hyperloop
 
 ### A curated list of awesome links to resources around Axway's Hyperloop for Titanium
 
