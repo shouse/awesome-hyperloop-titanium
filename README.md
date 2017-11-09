@@ -1,5 +1,7 @@
 # Awesome: Titanium Hyperloop
 
+[![Appcelerator Titanium](http://www-static.appcelerator.com/badges/titanium-git-badge-sq.png)](http://appcelerator.com/titanium/)
+
 ### A curated list of awesome links to resources around Axway's Hyperloop for Titanium
 
 **What is Hyperloop?**
@@ -61,6 +63,7 @@ Intreview with Nazir Dogan, Mobile Application Developer and Software Developer 
 
 - [iOS Hyperloop Programming Guide](https://wiki.appcelerator.org/display/guides2/iOS+Hyperloop+Programming+Guide) has information on running a demo application specifically for iOS and you can learn how to use Hyperloop in your own project.
 - [XIB](https://github.com/appcelerator/hyperloop-examples/blob/master/app/controllers/ios/xib.js) - Using Interface Builder via XIBs
+- [Cocoapods: Show Me Your Pods!](podfiles/README.md) - Links to working podfiles and relevant information
 
 **Windows**
 
