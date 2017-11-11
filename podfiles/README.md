@@ -5,6 +5,7 @@ https://github.com/hyperloop-modules/ti.mapbox/blob/master/Podfile
 [![Appcelerator Titanium](http://www-static.appcelerator.com/badges/titanium-git-badge-sq.png)](http://appcelerator.com/titanium/)
 
 ## Everything Podfiles and related
+- [Using the Podfile](https://guides.cocoapods.org/using/the-podfile.html) - Cocoapods.org
 
 ### Podfile Examples
 - [Ti.mapbox](https://github.com/hyperloop-modules/ti.mapbox) - Use the MapBox SDK with Axway Hyperloop
@@ -20,7 +21,6 @@ https://github.com/hyperloop-modules/ti.mapbox/blob/master/Podfile
 - [Ti.Spinkit](https://github.com/loop-modules/Ti.Spinkit/blob/master/Podfile)
 
 ### Other relevant information
- According to Jason Miller on TiSlack: 
- >Attempting to use Pods built with Swift versions > 3.2 will throw an error. The Pod I’m looking to use is built in Swift 4
- >*More info here:* https://github.com/CocoaPods/CocoaPods/issues/7134
+ Cocoapods is full-featured and takes some practice.  Here are some things to help you learn:
+ - [Use a Cocoapods Editor!](https://cocoapods.org/app)
  
