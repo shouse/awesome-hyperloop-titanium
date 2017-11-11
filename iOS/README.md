@@ -73,7 +73,7 @@ Frameworks are already handled [for native modules](https://github.com/appcelera
 but I have yet to see public reference of how to do this with pods.  It appears that it might be handled in a similar nature, 
 but different location / implementation.  
 
-# Here's the difference.  It's with how XCode build steps are set
+### Here's the difference.  It's with how XCode build steps are set
 - **Native Modules**: [CLI hook](https://github.com/appcelerator-modules/hook-swift-frameworks/blob/master/ti.swiftsupport.js#L18) - `cli.on('build.ios.xcodeproject', cb)`
 ```'use strict';
    
