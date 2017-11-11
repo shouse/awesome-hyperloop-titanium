@@ -48,7 +48,8 @@ Intreview with Nazir Dogan, Mobile Application Developer and Software Developer 
 
 - [AppC Hyperloop Jira - Open Tickets](https://jira.appcelerator.org/browse/TIMOB-25478?jql=status%20%3D%20Open%20AND%20labels%20%3D%20hyperloop) - See what issues are open
 
-[AppC Hyperloop Jira - Update Recently](https://jira.appcelerator.org/browse/TIMOB-25478?filter=-8&jql=labels%20%3D%20hyperloop)
+- [AppC Hyperloop Jira - Update Recently](https://jira.appcelerator.org/browse/TIMOB-25478?filter=-8&jql=labels%20%3D%20hyperloop)
+
 ### Guides
 [Enabling Hyperloop](https://wiki.appcelerator.org/display/guides2/Enabling+Hyperloop)
 > Each Titanium project that want to use Hyperloop requires the Hyperloop-services to be enabled. By default, Hyperloop is disabled and you can enable it for your projects via the CLI or within Studio.
