@@ -1,10 +1,12 @@
 https://github.com/hyperloop-modules/ti.mapbox/blob/master/Podfile
 
-# Awesome: Titanium Hyperloop
+# Awesome Titanium Hyperloop: iOS
 
 [![Appcelerator Titanium](http://www-static.appcelerator.com/badges/titanium-git-badge-sq.png)](http://appcelerator.com/titanium/)
 
-## Everything Podfiles and related
+## Working with Frameworks
+
+## Working with Podfiles
 - [Using the Podfile](https://guides.cocoapods.org/using/the-podfile.html) - Cocoapods.org
 
 ### Podfile Examples
