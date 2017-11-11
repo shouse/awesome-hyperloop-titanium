@@ -59,17 +59,12 @@ Intreview with Nazir Dogan, Mobile Application Developer and Software Developer 
 > In this in-depth video, Developer Evangelist **Jason Kneen** provides an overview of Titanium, its benefits and how it works. The tutorial delves into best practices for UI and views, navigation, buttons and labels, event handling, and data binding. Jason also demonstrates how these concepts are used in practice with a sample project code walkthrough.
 
 **Android**
-
-[Android Hyperloop Programming Guide](https://wiki.appcelerator.org/display/guides2/Android+Hyperloop+Programming+Guide) has information on running a demo application specifically for Android and you can learn how to use Hyperloop in your own project.
+[This page dedicated to Android and Hyperloop](iOS/README.md)
 
 **iOS**
-
-- [iOS Hyperloop Programming Guide](https://wiki.appcelerator.org/display/guides2/iOS+Hyperloop+Programming+Guide) has information on running a demo application specifically for iOS and you can learn how to use Hyperloop in your own project.
-- [XIB](https://github.com/appcelerator/hyperloop-examples/blob/master/app/controllers/ios/xib.js) - Using Interface Builder via XIBs
-- [Cocoapods: Show Me Your Pods!](podfiles/README.md) - Links to working podfiles and relevant information
+[This page dedicated to iOS and Hyperloop](iOS/README.md) - Links to working podfiles and relevant information
 
 **Windows**
-
 [Windows Hyperloop Programming Guide](https://wiki.appcelerator.org/display/guides2/Windows+Hyperloop+Programming+Guide) has information on running a demo application specifically for Windows and you can learn how to use Hyperloop in your own project.
 
 ### Modules
