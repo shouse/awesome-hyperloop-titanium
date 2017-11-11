@@ -60,13 +60,13 @@ Intreview with Nazir Dogan, Mobile Application Developer and Software Developer 
 
 ### Platform Specific Resources
 
-**Android**
+- **Android**
 [This page dedicated to Android and Hyperloop](Android/README.md)
 
-**iOS**
+- **iOS**
 [This page dedicated to iOS and Hyperloop](iOS/README.md) - Links to working podfiles and relevant information
 
-**Windows**
+- **Windows**
 [Windows Hyperloop Programming Guide](https://wiki.appcelerator.org/display/guides2/Windows+Hyperloop+Programming+Guide) has information on running a demo application specifically for Windows and you can learn how to use Hyperloop in your own project.
 
 ### Modules
