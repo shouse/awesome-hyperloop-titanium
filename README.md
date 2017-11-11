@@ -20,7 +20,7 @@ This repo is an attempt to bridge that gap and link the community to relevant in
 - Got something that belongs here? [Fork](https://github.com/shouse/awesome-hyperloop-titanium/edit/master/README.md#fork-destination-box) and Submit a PR!
 - Want information about something but don't have a link?  [Create an issue!](https://github.com/shouse/awesome-hyperloop-titanium/issues)
 
-## Table of Contents (Suggest one)
+## Table of Contents
  - [Information and Articles](https://github.com/shouse/awesome-hyperloop-titanium/blob/master/README.md#information-and-articles)
  - [Guides](https://github.com/shouse/awesome-hyperloop-titanium#guides)
  - [Modules](https://github.com/shouse/awesome-hyperloop-titanium#moduoles)
@@ -57,6 +57,8 @@ Intreview with Nazir Dogan, Mobile Application Developer and Software Developer 
 [AppC Blog - Tech Tutorial: Hyperloop Modules](http://www.appcelerator.com/blog/2017/07/tech-tutorial-hyperloop-modules/)
 
 > In this in-depth video, Developer Evangelist **Jason Kneen** provides an overview of Titanium, its benefits and how it works. The tutorial delves into best practices for UI and views, navigation, buttons and labels, event handling, and data binding. Jason also demonstrates how these concepts are used in practice with a sample project code walkthrough.
+
+### Platform Specific Resources
 
 **Android**
 [This page dedicated to Android and Hyperloop](iOS/README.md)

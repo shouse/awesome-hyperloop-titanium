@@ -22,8 +22,35 @@ Many of the basic Hyperloop examples are just this - extending built in framewor
 You can include 3rd Party Frameworks into your project.
 
 ## Working with Custom Frameworks
-This is currently pretty cutting edge for Titanium.  Support has existed for a decent amount of time, and the support keeps picking up speed.
-
+Support has existed for a decent amount of time, but it appears to finally be picking up speed.
+Prior to Hyperloop 2.2 you had to pay more attention to a file called `appc.js`, but it's going to be at least partially
+  deprecated, if not fully.  
+  It appears there's other functions it handles, serving as a [unified metadata file](https://github.com/appcelerator/cspec-appc-appc.js/tree/master).
+  So, don't currently take my word for what the full functionality of this file is.
+  
+Here's an example:
+```
+hyperloop: {
+    ios: {
+        xcodebuild: {
+            flags: {
+                GCC_PREPROCESSOR_DEFINITIONS: 'foo=bar'
+            },
+            frameworks: [
+                'StoreKit'
+            ]
+        },
+        thirdparty: {
+            'MyFramework': {
+                // these can be an array or string
+                source: ['src'],
+                header: 'src',
+                resource: 'src'
+            }
+        }
+    }
+}
+```
 ## Working with Cocoapods
 Being able to access dependency management platforms really is essential to modern development.  Don't reinvent the wheel.
  Hyperloop largely covers this, though currently it is not as intuitive or automatic as I'd like
@@ -41,7 +68,65 @@ Being able to access dependency management platforms really is essential to mode
     We’re just getting started with this app, want to help out and make contributions to hundreds of thousands of developer’s work flow? Get involved.
 
 ## Working with Cocoapods AND 3rd Party Frameworks
-When I figure this out I'll let you know!
+Cocoapods have have dependencies for 3rd party frameworks.  You'll see this used in a Podfile: `!use_frameworks`.  
+Frameworks are already handled [for native modules](https://github.com/appcelerator-modules/hook-swift-frameworks) 
+but I have yet to see public reference of how to do this with pods.  It appears that it might be handled in a similar nature, 
+but different location / implementation.  
+
+# Here's the difference.  It's with how XCode build steps are set
+- **Native Modules**: [CLI hook](https://github.com/appcelerator-modules/hook-swift-frameworks/blob/master/ti.swiftsupport.js#L18) - `cli.on('build.ios.xcodeproject', cb)`
+```'use strict';
+   
+   exports.id = 'ti.swiftsupport';
+   exports.cliVersion = '>=3.2';
+   exports.init = init;
+   
+   /**
+    * Main entry point for our plugin which looks for the platform specific
+    * plugin to invoke
+    */
+   function init(logger, config, cli, appc) {
+   	cli.on('build.ios.xcodeproject', {
+   		pre: function(data) {
+   			logger.info('Enabling Swift support ...');
+   
+   			var xobjs = data.args[0].hash.project.objects;
+   			var SWIFT_VERSION = 3.1; // Change to desired Swift version
+   															
+   			Object.keys(xobjs.PBXNativeTarget).forEach(function (targetUuid) {
+   				var target = xobjs.PBXNativeTarget[targetUuid];
+   				if (target && typeof target === 'object') {
+   					xobjs.XCConfigurationList[target.buildConfigurationList].buildConfigurations.forEach(function (buildConf) {
+   						var buildSettings = xobjs.XCBuildConfiguration[buildConf.value].buildSettings;
+   						buildSettings.ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = 'YES';
+   
+   						if (!buildSettings.SWIFT_VERSION) {
+   							buildSettings.SWIFT_VERSION = SWIFT_VERSION;
+   						}					
+   					});
+   				}
+   			});
+   		}
+   	});
+   }
+```
+
+
+- **Podfile**:
+```post_install do |installer|
+       installer.pods_project.targets.each do |target|
+           target.build_configurations.each do |config|
+               config.build_settings['SWIFT_VERSION'] = '3.1'
+               config.build_settings['SWIFT_OPTIMIZATION_LEVEL'] = '-Onone'
+               config.build_settings['ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES'] = 'YES'
+           end
+       end
+   end
+```
+I'm not an expert in Podfiles or XCode build settings, but you can see the power of manipulating build settings on targets
+
+So now back in Ti world, how do we get access to these frameworks?
+The documentation says to put the framework(s) in `/app/platform/ios`
 
 ## List of iOS Modules
 - [Ti.MTTCircularSlider by nazrdogan](https://github.com/nazrdogan/Ti.MTTCircularSlider) - Hyperloop module for https://github.com/MTT-IOS/MTTCircularSlider
@@ -85,3 +170,54 @@ When I figure this out I'll let you know!
 - [Ti.Spinkit](https://github.com/loop-modules/Ti.Spinkit/blob/master/Podfile)
 
  
+ ### appc.js
+ The following is an example of a Hyperloop enabled appc.js:
+ 
+ ```/**
+     * Hyperloop configuration
+     */
+    module.exports = {
+    	type: 'app',
+    	group: 'titanium',
+    	dependencies: {
+    	},
+    	hyperloop: {
+    		ios: {
+    			xcodebuild: {
+    				/**
+    				 * any flags available to be passed into the Xcode can be
+    				 * included here to further customize the xcode build
+    				 */
+    				flags: {
+    					GCC_PREPROCESSOR_DEFINITIONS: 'foo=bar'
+    				},
+    				/**
+    				 * this sample doesn't use StoreKit but this demonstrates
+    				 * how you can bring in frameworks explicitly. Hyperloop
+    				 * will automatically determine the required frameworks
+    				 * but in case you want to force a specific version, you can
+    				 * include it here
+    				 */
+    				frameworks: [
+    					'StoreKit'
+    				]
+    			},
+    			/**
+    			 * optionally, you can bring in third-party or first-party libraries,
+    			 * source code, resources etc. by including them here. The 'key' is the
+    			 * name of the package that will be used in the require (if code).
+    			 * the values can either be an Array or String value to the directory
+    			 * where the files are located
+    			 */
+    			thirdparty: {
+    				'MyFramework': {
+    					// these can be an array or string
+    					source: ['src'],
+    					header: 'src',
+    					resource: 'src'
+    				}
+    			}
+    		}
+    	}
+    };
+```
