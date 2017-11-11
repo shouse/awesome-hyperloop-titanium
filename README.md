@@ -73,7 +73,7 @@ Intreview with Nazir Dogan, Mobile Application Developer and Software Developer 
 
 **Cross-Platform (Android and iOS)**
 - [Ti.hockeyapp](https://github.com/hyperloop-modules/ti.hockeyapp) - Hyperloop-based version of HockeyApp for both Android and iOS
-- [Ti.Firbase](https://github.com/hansemannn/titanium-firebase) - This project will contain all Firebase-related modules for Analytics, Cloud-Messaging, Authentication, Firestore etc.
+- [Ti.Firebase](https://github.com/hansemannn/titanium-firebase) - This project will contain all Firebase-related modules for Analytics, Cloud-Messaging, Authentication, Firestore etc.
 
 **Android**
 - [Ti.AndroidCharts](https://github.com/loop-modules/Ti.AndroidCharts.) - This HyperLoop module allows you to use highly customizable Charts with the MPAndroidChart library: https://github.com/PhilJay/MPAndroidChart. This module was originally posted on LoopModules: https://loopmodules.com/downloads/ti-androidcharts/
