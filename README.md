@@ -61,7 +61,7 @@ Intreview with Nazir Dogan, Mobile Application Developer and Software Developer 
 ### Platform Specific Resources
 
 **Android**
-[This page dedicated to Android and Hyperloop](iOS/README.md)
+[This page dedicated to Android and Hyperloop](Android/README.md)
 
 **iOS**
 [This page dedicated to iOS and Hyperloop](iOS/README.md) - Links to working podfiles and relevant information
