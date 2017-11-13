@@ -128,6 +128,10 @@ I'm not an expert in Podfiles or XCode build settings, but you can see the power
 So now back in Ti world, how do we get access to these frameworks?
 The documentation says to put the framework(s) in `/app/platform/ios`
 
+## Other Alternatives
+If you can't get the Pod working, maybe [make it into a framework](https://github.com/CocoaPods/cocoapods-packager) and use that.
+YMMV.  If this works for you, please let us know!
+
 ## List of iOS Modules
 - [Ti.MTTCircularSlider by nazrdogan](https://github.com/nazrdogan/Ti.MTTCircularSlider) - Hyperloop module for https://github.com/MTT-IOS/MTTCircularSlider
 - [Ti.FSCalendar by nazrdogan](https://github.com/nazrdogan/Ti.FSCalendar) - Hyperloop module for https://github.com/WenchaoD/FSCalendar
@@ -157,6 +161,8 @@ The documentation says to put the framework(s) in `/app/platform/ios`
 
 
 ### Podfile Examples
+These are listed to see if there are any gems on the Podfiles.  From a short secon look it sees that most are normal ObjectiveC podfiles
+If you know of some referencing 3rd Party frameworks, especially Swift ones, please let us know!
 - [Ti.mapbox](https://github.com/hyperloop-modules/ti.mapbox) - Use the MapBox SDK with Axway Hyperloop
 - [Ti.MTTCircularSlider](https://github.com/nazrdogan/Ti.MTTCircularSlider/blob/master/Podfile)
 - [Ti.FSCalendar](https://github.com/nazrdogan/Ti.FSCalendar/blob/master/Podfile)
