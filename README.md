@@ -41,6 +41,8 @@ By Erin Bailey
 October 25, 2017: 
 Intreview with Nazir Dogan, Mobile Application Developer and Software Developer at Etiya, has been using Hyperloop since its early days to create six unique open-sourced modules.
 
+ - [Release Notes](https://docs.appcelerator.com/platform/latest/?print=/guide/Hyperloop_Release_Notes)
+
 **JIRA**
 
 - [AppC Hyperloop Jira - Component:Hyperloop](https://jira.appcelerator.org/browse/TIMOB-25481?jql=project%20%3D%20TIMOB%20AND%20component%20%3D%20Hyperloop)

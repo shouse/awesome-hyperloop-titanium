@@ -70,8 +70,24 @@ Being able to access dependency management platforms really is essential to mode
 ## Working with Cocoapods AND 3rd Party Frameworks
 Cocoapods have have dependencies for 3rd party frameworks.  You'll see this used in a Podfile: `!use_frameworks`.  
 Frameworks are already handled [for native modules](https://github.com/appcelerator-modules/hook-swift-frameworks) 
-but I have yet to see public reference of how to do this with pods.  It appears that it might be handled in a similar nature, 
-but different location / implementation.  
+But a different approach is required.  
+
+If you are using a version of Titanium SDK before 6.2.0, (hooks are the way to go)[https://github.com/appcelerator-modules/hook-embedded-frameworks].
+Steps to enable:
+- Add the above to the hyperloop.ios.xcodebuild.flags object of your appc.js
+- Place the ti.dynamiclib.js file in <your-project-root>/plugins/ti.dynamiclib/hooks
+- Add the plugin to your tiapp: <plugin>ti.dynamiclib</plugin>
+
+If you are using Titanium SDK 6.2+, specifically Hyperloop 2.2.0+, according to (TIMOB-23853)[https://jira.appcelerator.org/browse/TIMOB-23853] Embedded binaries are now supported
+
+Some frameworks include Simulator architectures ("fat libraries"). 
+Those frameworks usually provide a script to strip the unused architectures for distribution, 
+e.g. strip-framework.sh. If you use such a framework, adjust the path of the variable scriptPath, 
+otherwise null it to skip the build script phase. 
+An example of this file is included in this repo linked above(© Realm).
+
+Here is a recent example that I found:
+[PSPDFKit](https://github.com/PSPDFKit/Appcelerator-iOS) - Appcelerator Titanium Bridge for PSPDFKit for iOS https://pspdfkit.com
 
 ### Here's the difference.  It's with how XCode build steps are set
 - **Native Modules**: [CLI hook](https://github.com/appcelerator-modules/hook-swift-frameworks/blob/master/ti.swiftsupport.js#L18) - `cli.on('build.ios.xcodeproject', cb)`
@@ -123,10 +139,12 @@ but different location / implementation.
        end
    end
 ```
-I'm not an expert in Podfiles or XCode build settings, but you can see the power of manipulating build settings on targets
+You can see the power of manipulating build settings on targets, especially if you come from 
+ a native iOS development background
 
 So now back in Ti world, how do we get access to these frameworks?
-The documentation says to put the framework(s) in `/app/platform/ios`
+The documentation says to put the framework(s) in `/app/platform/ios`.
+Although
 
 ## Other Alternatives
 If you can't get the Pod working, maybe [make it into a framework](https://github.com/CocoaPods/cocoapods-packager) and use that.
