@@ -3,6 +3,8 @@ https://github.com/hyperloop-modules/ti.mapbox/blob/master/Podfile
 # Awesome Titanium Hyperloop: iOS
 
 [![Appcelerator Titanium](http://www-static.appcelerator.com/badges/titanium-git-badge-sq.png)](http://appcelerator.com/titanium/)
+[![License MIT](https://img.shields.io/badge/license-MIT-green.svg?style=flat)](https://writing.kemitchell.com/2016/09/21/MIT-License-Line-by-Line.html)&nbsp;
+![platform](https://img.shields.io/badge/platform-ios-ff69b4.svg)&nbsp;
 
 ## Why this README.md?
  I'd like to gather as much good information on Hyperloop and iOS as possible.  
@@ -76,7 +78,7 @@ If you are using a version of Titanium SDK before 6.2.0, (hooks are the way to g
 Steps to enable:
 - Add the above to the hyperloop.ios.xcodebuild.flags object of your appc.js
 - Place the ti.dynamiclib.js file in <your-project-root>/plugins/ti.dynamiclib/hooks
-- Add the plugin to your tiapp: <plugin>ti.dynamiclib</plugin>
+- Add the plugin to your tiapp: ```<plugin>ti.dynamiclib</plugin>```
 
 If you are using Titanium SDK 6.2+, specifically Hyperloop 2.2.0+, according to (TIMOB-23853)[https://jira.appcelerator.org/browse/TIMOB-23853] Embedded binaries are now supported
 
@@ -176,7 +178,17 @@ YMMV.  If this works for you, please let us know!
 - [Ti.reCAPTCHA by hansemannn](https://github.com/hansemannn/titanium-recaptcha) - Use the native reCAPTCHA API in Appcelerator Titanium (currently Android-only)
 - [AppC Github Client by AppC Dev Relations](https://github.com/appcelerator-developer-relations/appc-github-client) - Dashboard used to monitor Github organizations, repositories and more!
 
+### Modules
 
+**Cross-Platform (Android and iOS)**
+- [Ti.hockeyapp](https://github.com/hyperloop-modules/ti.hockeyapp) - Hyperloop-based version of HockeyApp for both Android and iOS
+- [Ti.Firebase](https://github.com/hansemannn/titanium-firebase) - This project will contain all Firebase-related modules for Analytics, Cloud-Messaging, Authentication, Firestore etc.
+
+### Other Code Examples
+ - [Official Github example](https://github.com/appcelerator/hyperloop-examples) - Hyperloop Examples
+>The following application demonstrates direct native API access using Appcelerator Hyperloop.
+ - [Imaging Workshops ToDo](https://github.com/appcdev/imagine-workshops-todo/tree/hyperloop?files=1) - Todo Demo App
+- [titanium-auth-session.js](https://gist.github.com/hansemannn/71b6181557ec0f6024e29c642dbe52e3) - Use Axway Hyperloop to perform OAuth-sessions with the iOS 11+ API "SFAuthenticationSession"
 
 ### Podfile Examples
 These are listed to see if there are any gems on the Podfiles.  From a short secon look it sees that most are normal ObjectiveC podfiles

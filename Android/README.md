@@ -17,6 +17,18 @@ has information on running a demo application specifically for Android and you c
 - [Ti.AndroidViewAnimations](https://github.com/loop-modules/Ti.AndroidViewAnimations) - Ti.AndroidViewAnimations is an Android Hyperloop wrapper of the AndroidViewAnimations library. It provides a wide range of different animations that can be applied to your Titanium components.
 - [Ti.CalendarView](https://github.com/m1ga/Ti.CalendarView) - Axway Hyperloop Calendar View for Android
 
+### Modules
+
+**Cross-Platform (Android and iOS)**
+- [Ti.hockeyapp](https://github.com/hyperloop-modules/ti.hockeyapp) - Hyperloop-based version of HockeyApp for both Android and iOS
+- [Ti.Firebase](https://github.com/hansemannn/titanium-firebase) - This project will contain all Firebase-related modules for Analytics, Cloud-Messaging, Authentication, Firestore etc.
+
+### Other Code Examples
+ - [Official Github example](https://github.com/appcelerator/hyperloop-examples) - Hyperloop Examples
+>The following application demonstrates direct native API access using Appcelerator Hyperloop.
+ - [Imaging Workshops ToDo](https://github.com/appcdev/imagine-workshops-todo/tree/hyperloop?files=1) - Todo Demo App
+- [titanium-auth-session.js](https://gist.github.com/hansemannn/71b6181557ec0f6024e29c642dbe52e3) - Use Axway Hyperloop to perform OAuth-sessions with the iOS 11+ API "SFAuthenticationSession"
+
 ## Working with Google's Frameworks
 Many of the basic Hyperloop examples are just this - extending built in frameworks.  You don't have to load any outside libraries to access this.
 
