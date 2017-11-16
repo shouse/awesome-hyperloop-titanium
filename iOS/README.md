@@ -25,8 +25,22 @@ You can include 3rd Party Frameworks into your project.
 
 ## Working with Custom Frameworks
 Support has existed for a decent amount of time, but it appears to finally be picking up speed.
-Prior to Hyperloop 2.2 you had to pay more attention to a file called `appc.js`, but it's going to be at least partially
-  deprecated, if not fully.  
+
+### Hyperloop Version >= 2.2
+The appc.js magic has been moved into the CLI core, and doesn't require all of the shenannigans it did before.
+To access **3rd party frameworks**, 
+- Copy the ```frameworkName.framework``` folder into ```[APP_ROOT]/app/platform/ios```
+- If the folder doesn't exist, create it.
+- Access the framework in your controller by : ```var myFavFramework = require('frameworkHeader');```
+- You might have to try to play around with the exact require statement.  See some examples of other HyperLoop require statements.
+ 
+ **Pitfalls**  
+- There's a few that I will add here soon
+
+
+### Hyperloop Version <= 2.1
+
+Prior to Hyperloop 2.2 you had to pay more attention to a file called `appc.js` which has now been automated and deprecated.  
   It appears there's other functions it handles, serving as a [unified metadata file](https://github.com/appcelerator/cspec-appc-appc.js/tree/master).
   So, don't currently take my word for what the full functionality of this file is.
   
