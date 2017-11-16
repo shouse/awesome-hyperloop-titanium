@@ -23,9 +23,8 @@ This repo is an attempt to bridge that gap and link the community to relevant in
 ## Table of Contents
  - [Information and Articles](https://github.com/shouse/awesome-hyperloop-titanium/blob/master/README.md#information-and-articles)
  - [Guides](https://github.com/shouse/awesome-hyperloop-titanium#guides)
- - [Modules](https://github.com/shouse/awesome-hyperloop-titanium#moduoles)
- - [Examples](https://github.com/shouse/awesome-hyperloop-titanium#examples)
- - [I NEED HELP HYPERLOOP!!!](http://tislack.org/) - We gotcha covered!  Join our awesome Slack team and get help with hyperloop in the #hyperloop, #help-me, or #jobs channels!  If it can be done somewhere there can help it happen.
+ - [iOS and Android Modules and Code](https://github.com/shouse/awesome-hyperloop-titanium#platform-specific-resources)
+ - [I NEED HELP!!!](http://tislack.org/) - We gotcha covered!  Join our awesome Slack team and get help with hyperloop in the #hyperloop, #help-me, or #jobs channels!  If it can be done somewhere there can help it happen.
 
 ### Information and Articles
  - [Official homepage](https://github.com/appcelerator/hyperloop-examples)
