@@ -54,6 +54,12 @@ Intreview with Nazir Dogan, Mobile Application Developer and Software Developer 
 ### Guides
 [Enabling Hyperloop](https://wiki.appcelerator.org/display/guides2/Enabling+Hyperloop)
 > Each Titanium project that want to use Hyperloop requires the Hyperloop-services to be enabled. By default, Hyperloop is disabled and you can enable it for your projects via the CLI or within Studio.
+**TL;DR**
+
+- For ```iOS``` add ```<use-jscore-framework>true</use-jscore-framework>``` to ```tiapp.xml``` 
+- Add ```<module>hyperloop</module>``` to ```tiapp.xml``` 
+- Add ```<plugin version="2.2.1">hyperloop</plugin>``` to ```tiapp.xml``` 
+
 
 [AppC Blog - Tech Tutorial: Hyperloop Modules](http://www.appcelerator.com/blog/2017/07/tech-tutorial-hyperloop-modules/)
 
