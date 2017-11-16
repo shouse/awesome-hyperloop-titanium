@@ -2,8 +2,8 @@
 
 [![Appcelerator Titanium](http://www-static.appcelerator.com/badges/titanium-git-badge-sq.png)](http://appcelerator.com/titanium/)
 ![Hyperloop Enabled](https://img.shields.io/badge/hyperloop-enabled-red.svg)&nbsp;
-[![License MIT](https://img.shields.io/badge/license-MIT-green.svg?style=flat)](https://writing.kemitchell.com/2016/09/21/MIT-License-Line-by-Line.html)&nbsp;
 ![platform](https://img.shields.io/badge/platform-ios-blue.svg)&nbsp;
+[![License MIT](https://img.shields.io/badge/license-MIT-green.svg?style=flat)](https://writing.kemitchell.com/2016/09/21/MIT-License-Line-by-Line.html)&nbsp;
 
 ## Why this README.md?
  I'd like to gather as much good information on Hyperloop and iOS as possible.  
