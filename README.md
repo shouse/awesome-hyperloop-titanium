@@ -26,10 +26,21 @@ This repo is an attempt to bridge that gap and link the community to relevant in
 - Want information about something but don't have a link?  [Create an issue!](https://github.com/shouse/awesome-hyperloop-titanium/issues)
 
 ## Table of Contents
- - [Information and Articles](https://github.com/shouse/awesome-hyperloop-titanium/blob/master/README.md#information-and-articles)
- - [Guides](https://github.com/shouse/awesome-hyperloop-titanium#guides)
  - [iOS and Android Modules and Code](https://github.com/shouse/awesome-hyperloop-titanium#platform-specific-resources)
- - [I NEED HELP!!!](http://tislack.org/) - We gotcha covered!  Join our awesome Slack team and get help with hyperloop in the #hyperloop, #help-me, or #jobs channels!  If it can be done somewhere there can help it happen.
+ - [Information and Articles](https://github.com/shouse/awesome-hyperloop-titanium/blob/master/README.md#information-and-articles)
+ - [I NEED HELP!!!](http://tislack.org/) - We gotcha covered!  Join our awesome Slack team and get help with hyperloop in the ```#hyperloop```, ```#help-me```, or ```#jobs``` channels!  If it can be done somewhere there can help it happen.
+
+### Platform Specific Resources
+
+- **Android**
+[This page dedicated to Android and Hyperloop](Android/README.md)
+
+- **iOS**
+[This page dedicated to iOS and Hyperloop](iOS/README.md) - Links to working podfiles and relevant information
+
+- **Windows**
+[Windows Hyperloop Programming Guide](https://wiki.appcelerator.org/display/guides2/Windows+Hyperloop+Programming+Guide) has information on running a demo application specifically for Windows and you can learn how to use Hyperloop in your own project.
+
 
 ### Information and Articles
  - [Official homepage](https://github.com/appcelerator/hyperloop-examples)
@@ -45,18 +56,6 @@ By Erin Bailey
 October 25, 2017: 
 Intreview with Nazir Dogan, Mobile Application Developer and Software Developer at Etiya, has been using Hyperloop since its early days to create six unique open-sourced modules.
 
- - [Release Notes](https://docs.appcelerator.com/platform/latest/?print=/guide/Hyperloop_Release_Notes)
-
-**JIRA**
-
-- [AppC Hyperloop Jira - Component:Hyperloop](https://jira.appcelerator.org/browse/TIMOB-25481?jql=project%20%3D%20TIMOB%20AND%20component%20%3D%20Hyperloop)
-- [AppC Hyperloop Jira - Label:Hyperloop](https://jira.appcelerator.org/browse/TISTUD-8658?jql=labels%20%3D%20hyperloop)
-
-- [AppC Hyperloop Jira - Open Tickets](https://jira.appcelerator.org/browse/TIMOB-25478?jql=status%20%3D%20Open%20AND%20labels%20%3D%20hyperloop) - See what issues are open
-
-- [AppC Hyperloop Jira - Update Recently](https://jira.appcelerator.org/browse/TIMOB-25478?filter=-8&jql=labels%20%3D%20hyperloop)
-
-### Guides
 [Enabling Hyperloop](https://wiki.appcelerator.org/display/guides2/Enabling+Hyperloop)
 > Each Titanium project that want to use Hyperloop requires the Hyperloop-services to be enabled. By default, Hyperloop is disabled and you can enable it for your projects via the CLI or within Studio.
 **TL;DR**
@@ -70,13 +69,13 @@ Intreview with Nazir Dogan, Mobile Application Developer and Software Developer 
 
 > In this in-depth video, Developer Evangelist **Jason Kneen** provides an overview of Titanium, its benefits and how it works. The tutorial delves into best practices for UI and views, navigation, buttons and labels, event handling, and data binding. Jason also demonstrates how these concepts are used in practice with a sample project code walkthrough.
 
-### Platform Specific Resources
+ - [Release Notes](https://docs.appcelerator.com/platform/latest/?print=/guide/Hyperloop_Release_Notes)
 
-- **Android**
-[This page dedicated to Android and Hyperloop](Android/README.md)
+**JIRA**
 
-- **iOS**
-[This page dedicated to iOS and Hyperloop](iOS/README.md) - Links to working podfiles and relevant information
+- [AppC Hyperloop Jira - Component:Hyperloop](https://jira.appcelerator.org/browse/TIMOB-25481?jql=project%20%3D%20TIMOB%20AND%20component%20%3D%20Hyperloop)
+- [AppC Hyperloop Jira - Label:Hyperloop](https://jira.appcelerator.org/browse/TISTUD-8658?jql=labels%20%3D%20hyperloop)
 
-- **Windows**
-[Windows Hyperloop Programming Guide](https://wiki.appcelerator.org/display/guides2/Windows+Hyperloop+Programming+Guide) has information on running a demo application specifically for Windows and you can learn how to use Hyperloop in your own project.
+- [AppC Hyperloop Jira - Open Tickets](https://jira.appcelerator.org/browse/TIMOB-25478?jql=status%20%3D%20Open%20AND%20labels%20%3D%20hyperloop) - See what issues are open
+
+- [AppC Hyperloop Jira - Update Recently](https://jira.appcelerator.org/browse/TIMOB-25478?filter=-8&jql=labels%20%3D%20hyperloop)
