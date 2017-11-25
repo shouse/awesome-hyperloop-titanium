@@ -270,3 +270,62 @@ If you know of some referencing 3rd Party frameworks, especially Swift ones, ple
     	}
     };
 ```
+
+### A Deeper Dive
+While doing experiments with Hyperloop it was useful and sometimes necessary to see what is happening behind the scenes
+- Metabase Generation
+- Build folder: ```/build/hyperloop/ios/js/[FRAMEWORK]```
+- Using Safari's Web Inspector as a debugger
+
+
+## Metabase Generation
+
+
+## Build Folder
+After you build your app if you have configured Hyperloop you will be able to find some information Build folder: ```/build/hyperloop/ios/js/[FRAMEWORK]```
+It's mostly ```*.js``` files with an occasional ```*.m``` file.
+
+***Files in ```/build/hyperloop/ios/ ```***
+- ```symbol_references.js``` - This is a JSON object composed of the following: ```setter```,```getter```,```functions```.
+ It's pretty verbose but verfied that it has strings of frameworks' variables and classes that were specifically invoked.
+ It also has a lot of more common invocations like ```"createController": 1```.  Possibly more to follow on this if it's worth a revisit.
+ I'll guess that with Axway moving to use Hyperloop integration in the base SDK, the ported parts will show here.
+
+- ```metabase-framework-[UID]``` - This file maps framework headers to a this consolidated resource
+ ```{
+      "name": "[FRAMEWORK_NAME]",
+      "path": "[PROJECT_ROOT]/platform/ios/[FRAMEWORK_NAME].framework",
+      "type": "dynamic",
+      "includes": {
+        "[FRAMEWORK_HEADER_1]": "[PROJECT_ROOT]/platform/ios/[FRAMEWORK_NAME].framework/Headers/[FRAMEWORK_HEADER].h",
+        "[FRAMEWORK_HEADER_2]": "[PROJECT_ROOT]/platform/ios/[FRAMEWORK_NAME].framework/Headers/[FRAMEWORK_HEADER].h",
+        "[FRAMEWORK_HEADER_3]": "[PROJECT_ROOT]/platform/ios/[FRAMEWORK_NAME].framework/Headers/[FRAMEWORK_HEADER].h",
+        // ...
+      }
+    }```
+ 
+- ```metabase-8.0-[PLATFORM]-[UID].h``` - This is where frameworks' main headers are imported.
+ ```
+  /**
+   * HYPERLOOP GENERATED - DO NOT MODIFY
+   */
+  #import "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.1.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h"
+  #import "[PROJECT_ROOT]/platform/ios/[FRAMEWORK_NAME]/Headers/[FRAMEWORK_HEADER].h"
+  ```
+
+- ```metabase-8.0-[PLATFORM]-[UID].json```
+
+***Files in ```/build/inspectFrameworks/ ```***
+- ```frameworks.json``` - Appears to be references to third party frameworks included in the project 
+Example entry:
+```"[PROJECT_ROOT]/platform/ios/FrameworkName.framework": {
+         "name": "Framework Name",
+         "path": "[PROJECT_ROOT]/platform/ios/FrameworkName.framework",
+         "type": "dynamic",
+         "architectures": [
+           "i386",
+           "x86_64",
+           "armv7",
+           "arm64"
+         ]
+       } ```
