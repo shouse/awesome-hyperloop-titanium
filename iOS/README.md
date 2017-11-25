@@ -306,14 +306,18 @@ It's mostly ```*.js``` files with an occasional ```*.m``` file.
  
 - ```metabase-8.0-[PLATFORM]-[UID].h``` - This is where frameworks' main headers are imported.
  ```
-  /**
-   * HYPERLOOP GENERATED - DO NOT MODIFY
-   */
   #import "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.1.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h"
   #import "[PROJECT_ROOT]/platform/ios/[FRAMEWORK_NAME]/Headers/[FRAMEWORK_HEADER].h"
   ```
 
-- ```metabase-8.0-[PLATFORM]-[UID].json```
+- ```metabase-8.0-[PLATFORM]-[UID].json``` - ***HUGE FILE ALERT!*** This is The Motherload Metafile (I made that up).
+ So while I do have some pretty extensive frameworks in a sample project, I still never expected a 335,000 line file...
+ I'm going to have to go back to the basics with a single native Hyperloop reference to really get this one.  
+ 
+ ***Help me make sense of this file!?!***  
+ Fork me and do a PR or simply just find me on TiSlack @stevenmhouse!
+
+
 
 ***Files in ```/build/inspectFrameworks/ ```***
 - ```frameworks.json``` - Appears to be references to third party frameworks included in the project 
