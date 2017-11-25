@@ -311,12 +311,11 @@ It's mostly ```*.js``` files with an occasional ```*.m``` file.
   ```
 
 - ```metabase-8.0-[PLATFORM]-[UID].json``` - ***HUGE FILE ALERT!*** This is The Motherload Metafile (I made that up).
- So while I do have some pretty extensive frameworks in a sample project, I still never expected a 335,000 line file...
+ While I do have some pretty extensive frameworks in my reference sample project, I still never expected a 335,000 line file...
  I'm going to have to go back to the basics with a single native Hyperloop reference to really get this one.  
  
- ***Help me make sense of this file!?!***  
+ ***Help me make sense of this file!?!***
  Fork me and do a PR or simply just find me on TiSlack @stevenmhouse!
-
 
 
 ***Files in ```/build/inspectFrameworks/ ```***
