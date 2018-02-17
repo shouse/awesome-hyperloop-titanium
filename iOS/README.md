@@ -196,6 +196,7 @@ YMMV.  If this works for you, please let us know!
 **Cross-Platform (Android and iOS)**
 - [Ti.hockeyapp](https://github.com/hyperloop-modules/ti.hockeyapp) - Hyperloop-based version of HockeyApp for both Android and iOS
 - [Ti.Firebase](https://github.com/hansemannn/titanium-firebase) - This project will contain all Firebase-related modules for Analytics, Cloud-Messaging, Authentication, Firestore etc.
+- [localytics-hyperloop](https://github.com/centrevilletech/localytics-hyperloop) - This project provides a demo app and library for using the Localytics service in iOS and Android.
 
 ### Other Code Examples
  - [Official Github example](https://github.com/appcelerator/hyperloop-examples) - Hyperloop Examples
