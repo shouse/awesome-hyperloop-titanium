@@ -43,7 +43,7 @@ This repo is an attempt to bridge that gap and link the community to relevant in
 
 
 ### Information and Articles
- - [Official homepage](https://github.com/appcelerator/hyperloop-examples)
+ - [Sample App](https://github.com/appcelerator/hyperloop-examples)
  - [Axway Docs](https://docs.axway.com/bundle/Titanium_SDK_allOS_en/page/hyperloop.html) - Some of the best documentation currently
  - [Hyperloop FAQ](https://docs.axway.com/bundle/Titanium_SDK_allOS_en/page/hyperloop_faq.html)
  - [Hyperloop Builds](https://github.com/appcelerator-modules/hyperloop-builds) - Collection of the latest Hyperloop releases, including pre-release versions and master builds.
