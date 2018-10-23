@@ -16,7 +16,8 @@ has information on running a demo application specifically for Android and you c
 ## List of Android Modules
 | Name | Description |
 |-|-|
-| [Ti.AndroidCharts](https://github.com/loop-modules/Ti.AndroidCharts.) | This HyperLoop module allows you to use highly customizable Charts with the MPAndroidChart library: https://github.com/PhilJay/MPAndroidChart. This module was originally posted on LoopModules: https://loopmodules.com/downloads/ti-androidcharts/ |
+|[Pattern Lock View](https://github.com/prashantsaini1/hyperloop-android-pattern-lock)| Create the native Android PatternLock view based on this library [PatternLockView](https://github.com/aritraroy/PatternLockView)|
+| [Ti.AndroidCharts](https://github.com/loop-modules/Ti.AndroidCharts) | This HyperLoop module allows you to use highly customizable Charts with the MPAndroidChart library: https://github.com/PhilJay/MPAndroidChart. This module was originally posted on LoopModules: https://loopmodules.com/downloads/ti-androidcharts/ |
 |[Ti.Reprint](https://github.com/loop-modules/Ti.Reprint)| This HyperLoop module allows you to implement fingerprint recognition in your Android app|
 | [Ti.FAB](https://github.com/loop-modules/Ti.FAB) |Ti.FAB is an Android Hyperloop wrapper of the native Floating Action Button component. A Floating Action Button represents the primary action in an application.|
 | [Ti.AndroidViewAnimations](https://github.com/loop-modules/Ti.AndroidViewAnimations) |Ti.AndroidViewAnimations is an Android Hyperloop wrapper of the AndroidViewAnimations library. It provides a wide range of different animations that can be applied to your Titanium components.|
