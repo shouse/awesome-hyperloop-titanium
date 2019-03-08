@@ -1,3 +1,6 @@
+**Looking for a maintainer**
+If you are interested in maintaining this, let me know somehow.  I'm not sure this is still needed.
+
 # Awesome: Titanium Hyperloop
 
 [![Appcelerator Titanium](http://www-static.appcelerator.com/badges/titanium-git-badge-sq.png)](http://appcelerator.com/titanium/)
